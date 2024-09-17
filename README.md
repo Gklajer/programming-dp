@@ -6,25 +6,25 @@ This is the source repository for the book "Programming Differential Privacy." Y
 
 To build the book:
 
-```
+```sh {"id":"01HZAAKWYGFD6WMTF2M3DJ0EB6"}
 jupyter-book build .
 ```
 
 To publish the html:
 
-```
+```sh {"id":"01HZAAKWYGFD6WMTF2M44V59E6"}
 ghp-import -n -p -f _build/html
 ```
 
 To generate latex:
 
-```
+```sh {"id":"01HZAAKWYGFD6WMTF2M5TT4EHE"}
 jupyter-book build . --builder latex
 ```
 
 To get decent latex output, add this:
 
-```
+```tex {"id":"01HZAAKWYGFD6WMTF2M7T32T4T"}
 \PassOptionsToPackage{svgnames}{xcolor}
 ...
 \sphinxsetup{%
@@ -44,7 +44,7 @@ To get decent latex output, add this:
 
 Or:
 
-```
+```tex {"id":"01HZAAKWYGFD6WMTF2MASR389M"}
 \PassOptionsToPackage{svgnames}{xcolor}
 ...
 \sphinxsetup{%
@@ -65,7 +65,7 @@ Or:
 
 And also:
 
-```
+```tex {"id":"01HZAAKWYGFD6WMTF2MBBPSBDT"}
     \makeatletter
     \usepackage{ifthen}
     \usepackage{tcolorbox}
